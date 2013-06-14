@@ -1,0 +1,14 @@
+
+drop database sheds;
+
+create database sheds;
+
+use sheds;
+
+drop table sheds;
+
+create table sheds(no, description, range0_low, range0_high, range1_low, range1_high, range2_low, range2_high, range3_low, range3_high);
+
+drop table sheds_celcius;
+
+create table sheds_celcius(no, shed_no, celcius, time);
