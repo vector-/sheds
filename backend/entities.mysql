@@ -1,4 +1,3 @@
-
 drop database sheds;
 
 create database sheds;
@@ -12,3 +11,18 @@ create table sheds(no, description, range0_low, range0_high, range1_low, range1_
 drop table sheds_celcius;
 
 create table sheds_celcius(no, shed_no, celcius, time);
+
+drop table sheds_indicator;
+
+create table sheds_indicator(no, shed_no, module_addr, register_addr);
+
+// user management
+drop table user_info;
+
+create table user_info(name, avatar, pass, role_no);
+
+drop table user_role;
+
+create table user_role(no, operations);
+// query, manage, setup
+
